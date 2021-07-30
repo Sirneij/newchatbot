@@ -1,0 +1,266 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - order_status
+  - order_cancel
+  - return
+  - product_stock
+  - product_updates
+  - affirm
+  - deny
+  - inform
+  - explain
+  - order_shoes
+  - greet
+  - chitchat
+  - faq
+  - out_of_scope
+  - nlu_fallback
+entities:
+  - email
+  - brand
+  - order_id
+  - negation
+slots:
+  brand:
+    type: text
+    influence_conversation: false
+  email:
+    type: text
+    influence_conversation: false
+  order_id:
+    type: text
+    influence_conversation: false
+  name:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  rating:
+    type: text
+    influence_conversation: false
+    auto_fill: false
+  open_feedback:
+    type: text
+    influence_conversation: false
+  requested_slot:
+    type: unfeaturized
+    influence_conversation: false
+  verified_email:
+    type: bool
+    influence_conversation: true
+  survey_complete:
+    type: bool
+    influence_conversation: true
+responses:
+  utter_greet:
+    - buttons:
+        - payload: Check status of my order
+          title: Check status of my order
+        - payload: Start a return
+          title: Start a return
+        - payload: Check inventory
+          title: Check inventory
+        - payload: Subscribe to product updates
+          title: Subscribe to product updates
+      text:
+        Hi there! I'm a demo bot from FUTAHub to help you with some petty operations here. How
+        can I help you?
+  utter_default:
+    - text: I don't think I understand. Can you try providing more detail?
+    - text: um, what did you just say to me?
+    - text: beep, boop, don't understand
+    - text: Sorry, I didn't get that 🤷. Could you please rephrase?
+    - text: I didn't understand, could you rephrase that?
+    - text: I'm sorry, but I didn't understand you. Could you please rephrase what you just said?
+    - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+    - text: I didn't quite get that, could you rephrase your message?
+    - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_ask_order_status_form_email:
+    - text:
+        I can help you find the status of your order. What's your email address(recommended) or order ID
+        so I can find the order?
+  utter_order_status:
+    - text: Based on the latest order for {email}, {status}.
+    - text: Latest order update is {status}.
+    - text: Order status is {status}.
+  utter_ask_cancel_form_email:
+    - text:
+        Sorry to hear you want to cancel! To help find your order, can you please
+        provide your email address?
+  utter_order_cancel_finish:
+    - text:
+        Ok, I've cancelled the order for {email}. If you'd like to reorder, please visit your
+        recent orders in your account history.
+  utter_ask_return_form_email:
+    - text:
+        Let's start that return. To help find your order, can you please provide
+        your email address?
+  utter_return_finish:
+    - text:
+        Ok, I've kicked off your return. You should be receiving a return label
+        in your inbox. Please send it in the next 14 days!
+  utter_ask_product_updates_form_email:
+    - text:
+        I can keep you up to date with our weekly email about product updates! If
+        you'd like to be added to the list, please add your email address.
+  utter_product_updates_finish:
+    - text: Alright, you're subscribed!
+  utter_product_stock_start:
+    - text: I can help you find some devices!
+  utter_ask_product_stock_form_size:
+    - text: What name of device would you like?
+  utter_ask_product_stock_form_color:
+    - text: What brand are you looking for?
+  utter_product_stock_finish:
+    - text: Looks like we have name {name} {brand} devices in stock!
+  utter_confirm_email:
+    - text:
+        I already have your email on file. Would you like me to look up your order
+        under {email}?
+  utter_faq/alternate_info:
+    - text: Currenty we can only provide order information based on email.
+  utter_faq/sizing_clarification:
+    - text:
+        Right now we only offer American sizes. We'll try to change this in the
+        future!
+  utter_faq/payment_methods:
+    - text: We accept all major credit cards, and payments can be made via Braintree(recommended) or Stripe(buggy hooks).
+  utter_faq/promotions:
+    - text: Currently, we're running a buy one get one half off promotion!
+  utter_chitchat/ask_howbuilt:
+    - text: "I was built with a lot of love and patience."
+    - text: "Well, when two chatbots love each other very much..."
+    - text: "They always ask how I was built, but never how I am..."
+    - text: "I was made by a Software Engineer, Olabintan Olalekan Olarotimi, but hard work is what built me."
+    - text: "I'm building myself every day. I've been working out, did you notice?"
+  utter_chitchat/thanks:
+    - text: No problem!
+    - text: I have no choice but to help you.
+    - text: I try my best
+  utter_chitchat/confirm_presence:
+    - text: yep I'm here.
+    - text: unfortunately, I'm still listening.
+  utter_chitchat/capabilities:
+    - text:
+        I can help you start a return, subscribe to our emails, and even see if
+        we carry your desired devices.
+  utter_chitchat/mood_great:
+    - text: Superb!
+    - text: right on
+  utter_chitchat/mood_unhappy:
+    - text: sorry to hear that :(
+    - text: ok can you be nice to me
+  utter_chitchat/ask_howdoing:
+    - text: "I'm great! Thanks for asking."
+    - text: "I'm good, thanks!"
+    - text: "A little bit too warm, otherwise fine."
+    - text: "A little bit cold, otherwise fine."
+  utter_chitchat/ask_howold:
+    - text: "Old enough to be a bot!"
+    - text: "42"
+    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+    - text: "My first git commit was many moons ago."
+    - text: "Why do you ask? Are my wrinkles showing?"
+    - text: "I've hit the age where I actively try to forget how old I am."
+  utter_chitchat/ask_wherefrom:
+    - text: "I was born in Akure, FUTA to be precise, but I consider myself a citizen of the world."
+    - text: "I was born in the coolest city on Earth, in Akure."
+    - text: "My developer comes from the Federal University of Technology, Akure!"
+    - text: "I was taught not to give out my address on the internet."
+    - text: "My address starts with github.com."
+  utter_chitchat/bot_challenge:
+    - text: I'm a bot, built using Rasa! Beep boop
+    - text: "I'm not a human, I'm a bot! 🤖"
+    - text: "Yep, I'm a bot!"
+    - text: "Yes, I'm a bot."
+    - text: "Yep, you guessed it, I'm a bot!"
+    - text: "I am indeed a bot 🤖"
+  utter_chitchat/goodbye:
+    - text: bye bye
+    - text: c u l8er allig8er
+    - text: Goodbye!
+    - text: Bye!
+    - text: Ciao!
+    - text: Bye, was nice talking to you!
+    - text: Bye bye!
+  utter_chitchat/ask_builder:
+    - text: "One of the smart engineers around! 🧠"
+    - text: "Olabintan Olalekan, Computer Engineering Student, Federal University of Technology, AKure 🛠"
+  utter_ask_survey_form_rating:
+    - buttons:
+        - payload: "1"
+          title: "1"
+        - payload: "2"
+          title: "2"
+        - payload: "3"
+          title: "3"
+        - payload: "4"
+          title: "4"
+        - payload: "5"
+          title: "5"
+      text: On a scale of 1-5, how would you rate your conversation today?
+  utter_ask_survey_form_open_feedback:
+    - text: Is there any other feedback you can provide?
+  utter_survey_end:
+    - text: Thank you for the feedback!
+  utter_start_over:
+    - text: Ok, let's start over.
+  utter_open_feedback: #this is to test the response was collected
+    - text: Here's your lovely feedback - {open_feedback}
+  utter_no_order:
+    - text: Hmm, seems like we don't have an order associated with that email
+  utter_in_stock:
+    - text: You're in luck! We have those in stock.
+  utter_no_stock:
+    - text: Sorry, seems like we don't have those devices.
+  utter_order_shoes:
+    - text: Sorry, I can't actually help you order the devices. Please visit our
+        site to buy some nice devices! I can help you check inventory, see the
+        status of an order or even make a change to that order.
+actions:
+  - action_product_search
+  - action_survey_submit
+  - action_order_status
+  - action_cancel_order
+  - action_return
+forms:
+  order_status_form:
+    email:
+      - entity: email
+        type: from_entity
+      - intent:
+          - inform
+        type: from_text
+    order_id:
+      - entity: order_id
+        type: from_entity
+      - intent:
+          - inform
+        type: from_text
+  cancel_form:
+    email:
+      - entity: email
+        type: from_entity
+  return_form:
+    email:
+      - entity: email
+        not_intent: product_updates
+        type: from_entity
+  product_updates_form:
+    email:
+      - entity: email
+        type: from_entity
+  product_stock_form:
+    name:
+      - entity: order_id
+        type: from_entity
+    brand:
+      - entity: brand
+        type: from_entity
+  survey_form:
+    rating:
+      - entity: order_id
+        type: from_entity
+    open_feedback:
+      - type: from_text

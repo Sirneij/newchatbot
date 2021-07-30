@@ -1,0 +1,1115 @@
+nlu:
+  - intent: order_status
+    examples: |
+      - check status of my order
+      - when are my devices coming in
+      - when will they get here
+      - I'd like to check the status of my order pls
+      - check status
+      - I'd like an update on my order
+      - Check status of my order
+      - I haven't received my order yet, can we check that?
+      - where is my order?
+      - I want to check the status of my order
+      - actually can I check the status of my order
+      - order status for example@rasa.com
+      - Can you check my order for me? My Order ID is [SDZ3peA6ha](order_id)
+      - order status for [SDZ3peA6ha](order_id)
+  - intent: order_cancel
+    examples: |
+      - i'd like to cancel my order
+      - cancel my devices
+      - I changed my mind on my order
+      - cancel my order
+  - intent: return
+    examples: |
+      - start a return
+      - I don't want my devices anymore
+      - how do I return these?
+      - return some devices
+      - Which items are available to return?
+      - Start a return
+      - Okay. I would like to return some devices I bought
+      - yeah I want to return something
+  - intent: product_stock
+    examples: |
+      - do you have any [apple](brand) devices in stock?
+      - what about [infinix](brand) devices
+      - what's your inventory
+      - are you out of size 9 devices
+      - check inventory
+      - do you have my special devices in stock
+      - Check inventory
+      - i'm looking for new devices
+  - intent: product_updates
+    examples: |
+      - what's new on the site?
+      - how do I find out updates
+      - I'd like to sign up for updates
+      - Subscribe to product updates
+      - subscribe to updates
+      - i [don't](negation) want to subscribe
+      - I [do not](negation) subscribe
+  - intent: inform
+    examples: |
+      - example@rasa.com
+      - my email is example@yahoo.com
+      - it's example@gmail.com
+      - [apple](brand) devices
+      - [infinix](brand) ones
+      - I'm looking for [orange](brand) devices
+      - [brown](brand)
+      - [blue](brand)
+      - it's 123
+      - it's a@b.com
+      - xyz@hulaloo.ai
+      - gray
+      - [Maize](brand) and [blue](brand)
+      - wait actually that email is wrong. it should be asdf1@asdf.com
+      - asdf@asdf.com
+      - [Grey](brand)
+      - test@test.com
+      - [SDZ3peA6ha](order_id)
+  - intent: order_shoes
+    examples: |
+      - i want to buy devices
+      - no, don't want to do a return, want to purchase new devices
+      - since they're in stock, how about I place an order
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - Accept
+      - Awesome!
+      - Good
+      - Great
+      - I accept
+      - I accept.
+      - I agree
+      - I am using it
+      - I changed my mind. I want to accept it
+      - I do
+      - I get it
+      - I guess so
+      - I have used it in the past
+      - I will
+      - I'd absolutely love that
+      - I'm sure I will!
+      - I'm using it
+      - Nice
+      - OK
+      - Ofcourse
+      - Oh yes
+      - Oh, ok
+      - Ok
+      - Ok let's start
+      - Ok.
+      - Okay
+      - Okay!
+      - PLEASE
+      - SURE
+      - Sure
+      - Sweet
+      - That would be great
+      - YES
+      - YUP
+      - Yea
+      - Yeah
+      - Yeah sure
+      - Yep
+      - Yep that's fine
+      - Yep!
+      - Yepp
+      - Yes
+      - Yes I do
+      - Yes please
+      - Yes please!
+      - Yes, I accept
+      - Yes.
+      - Yup
+      - a little
+      - absolutely
+      - accept
+      - accepted
+      - agreed
+      - ah ok
+      - alright
+      - alright, cool
+      - amayzing
+      - amazing!
+      - awesome
+      - awesome!
+      - confirm
+      - cool story bro
+      - definitely yes without a doubt
+      - done
+      - fair enough
+      - fcourse
+      - fine
+      - fuck yeah!
+      - go
+      - go ahead
+      - go for it
+      - going super well
+      - good.
+      - great
+      - great lets do that
+      - great!
+      - hell yeah
+      - hell yes
+      - hm, i'd like that
+      - how nice!
+      - i accept
+      - i agree
+      - i am!
+      - i want that
+      - i will!
+      - it is ok
+      - its okay
+      - ja
+      - ja cool
+      - ja thats great
+      - jezz
+      - jo
+      - k
+      - kk
+      - lets do it
+      - lets do this
+      - not bad
+      - of course
+      - ofcoure i do
+      - ofcourse
+      - oh awesome!
+      - oh cool
+      - oh good !!
+      - oh super
+      - ok
+      - ok cool
+      - ok fine
+      - ok friend
+      - ok good
+      - ok great
+      - ok i accept
+      - ok sara
+      - ok, I behave now
+      - ok, I understood
+      - ok, Sara
+      - ok...
+      - okay
+      - okay cool
+      - okay sure
+      - okay..
+      - oki doki
+      - okie
+      - ook
+      - oui
+      - perfect
+      - please
+      - si
+      - sort of
+      - sure
+      - sure thing
+      - sure!
+      - that is cool
+      - that ok
+      - that sounds fine
+      - that's great
+      - thats fine
+      - thats good
+      - thats great
+      - top
+      - uh-huh
+      - very much
+      - well yes
+      - y
+      - ya
+      - ya cool
+      - ya go for it
+      - ya i want
+      - ya please
+      - ya thats cool
+      - yaah
+      - yap
+      - yaps
+      - yas
+      - yay
+      - ye
+      - ye splease
+      - yea
+      - yeah
+      - yeah do that
+      - yeah sure
+      - yeah'=
+      - yeah, why not
+      - yeeeeezzzzz
+      - yeeees
+      - yep
+      - yep i want that
+      - yep if i have to
+      - yep please
+      - yep that's nice
+      - yep thats cool
+      - yep, will do thank you
+      - yep. :/
+      - yes
+      - yes ...
+      - yes I do
+      - yes accept please
+      - yes baby
+      - yes cool
+      - yes give me information
+      - yes go ahead
+      - yes go for it
+      - yes great
+      - yes i accept
+      - yes i agree
+      - yes i have built a bot before
+      - yes i have!
+      - yes it is
+      - yes it was okay
+      - yes of course
+      - yes pleae
+      - yes please
+      - yes please!
+      - yes pls
+      - yes sirfr
+      - yes that's great
+      - yes that's what i want
+      - yes you can
+      - yes'
+      - yes, I'd love to
+      - yes, cool
+      - yes, give me information, please
+      - yes,i am
+      - yes.
+      - yesh
+      - yess
+      - yessoo
+      - yesss
+      - yesssss
+      - yesyestyes
+      - yesyesyes
+      - yez
+      - yop
+      - you asked me a yes or no question, which i answered with yes
+      - you got me, I accept, if you want me to
+      - yres
+      - ys
+      - yup
+      - yyeeeh
+      - Okay cool
+      - ok..
+      - considering
+      - More a less
+      - sounds good!
+      - really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - Nah, I would not like to be added to the list
+      - nope
+      - I don't want to
+      - I don't want to give it to you
+      - I don't want to say
+      - I dont want to tell
+      - I'm not giving you my email address
+      - I'm not going to give it to you
+      - NEIN
+      - NO
+      - NO DON"T WANT THIS!
+      - Nah
+      - Neither
+      - Never
+      - Nevermind
+      - No
+      - No thank you
+      - No, not really.
+      - No, thank you
+      - No.
+      - Nopes
+      - Not really
+      - absolutely not
+      - decline
+      - definitely not
+      - deny
+      - i decline
+      - i don not like this
+      - i don't think so
+      - i don't want either of those
+      - i don't want to
+      - i don't want to give you my email
+      - i dont want to
+      - i dont want to accept :P lol
+      - i guess it means - no
+      - i'm afraid not
+      - i'm not sure
+      - it is going pretty badly
+      - it sucks
+      - it sux
+      - n
+      - na
+      - nah
+      - nah I'm good
+      - nah not for me
+      - nah, first time
+      - nah, i'm good
+      - nehi
+      - nein
+      - neither
+      - never
+      - never mind
+      - no
+      - no :(
+      - no I dont want
+      - no I haven't decided yet if I want to sign up
+      - no and no again
+      - no bots at all
+      - no go
+      - no i can't
+      - no i don't accept
+      - no i dont want to
+      - no i dont want to accept :P lol
+      - no i won't
+      - no ma'am
+      - no sir
+      - no sorry
+      - no thank s
+      - no thank you
+      - no thanks
+      - no way
+      - no you did it wrong
+      - no!!!!
+      - no, i hate it
+      - no, my frst time
+      - no, thank you
+      - no, thanks
+      - no, thankyou
+      - no. u r idiot
+      - non
+      - noooooooooo
+      - noooooooooooooooooooooooooooooooooooooooo
+      - nop
+      - nope
+      - nope!
+      - nope. i am good
+      - not going well at all
+      - not really
+      - not right now
+      - not yet
+      - nö
+      - sorry not right now
+      - still dont want to tell
+      - thanks but no thanks
+      - this sucks
+      - very bad
+      - I do not need help installing
+      - I don't wanna tell the name of my company
+      - no stop
+      - stop it, i do not care!!!
+      - none of them
+      - I don't agree
+  - intent: explain
+    examples: |
+      - can you elaborate
+      - could you explain why you need that
+      - could you tell me more
+      - explain it to me
+      - explain that
+      - i want more information
+      - i would like to know why you need that
+      - please elaborate
+      - please explain
+      - why do you need to know that
+      - why is that necessary
+      - give me more details
+      - why
+      - what do you mean
+      - what does that mean
+      - how come?
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - yo
+      - HEY
+      - heyy
+      - Hey!!!
+      - hallo?
+      - Bom dia
+      - Bonjour
+      - Good Morning
+      - Good morning
+      - Good mourning
+      - Guten Morgen
+      - HELLO
+      - HEY
+      - HEllo
+      - HI
+      - HI Sara
+      - Hallo
+      - Hei
+      - Hellllooooooo
+      - Hello
+      - Hello Bot
+      - Hello Rasa
+      - Hello Sara
+      - Hello sara
+      - Hello!
+      - Hey
+      - Hey Sara
+      - Hey bot
+      - Heya
+      - Heylo
+      - Hi
+      - Hi Sara
+      - Hi Sara!
+      - Hi bot
+      - Hi man
+      - Hi rasa
+      - Hi sara
+      - Hi sara..
+      - Hi there
+      - Hi!
+      - Hi'
+      - Hi,
+      - Hi, bot
+      - Hieee
+      - Hieeeeeeeeeeeee
+      - Hola
+      - I said, helllllloooooO!!!!
+      - Well hello there ;)
+      - What is up?
+      - Whats up
+      - Whats up my bot
+      - Whats up?
+      - ayyyy whaddup
+      - bonjour
+      - ey boss
+      - good evening
+      - good moring
+      - good morning
+      - greet
+      - greetings
+      - hai
+      - hallo
+      - hallo sara
+      - halloo
+      - halloooo
+      - halo
+      - halo sara
+      - heeey
+      - heelio
+      - hell9o
+      - hellio
+      - hello
+      - hello Sara
+      - hello everybody
+      - hello friend
+      - hello hi
+      - hello is anybody there
+      - hello it is me again
+      - hello robot
+      - hello sara
+      - hello sweatheart
+      - hello sweet boy
+      - hello there
+      - hello world
+      - hello, my name is [Charles Pfeffer](name)
+      - hello?
+      - hello]
+      - hellooo
+      - helloooo
+      - helo
+      - hey
+      - hey bot
+      - hey bot!
+      - hey dude
+      - hey hey
+      - hey let's talk
+      - hey rasa
+      - hey sara
+      - hey ther
+      - hey there
+      - hey there boy
+      - hey there..
+      - hey, let's talk
+      - hey, sara!
+      - heya
+      - heyho
+      - heyo
+      - hhola
+      - hi
+      - hi !
+      - hi Mister
+      - hi again
+      - hi can you speak ?
+      - hi folks
+      - hi friend
+      - hi friends
+      - hi hi
+      - hi i'm [Sandra Hernandez](name)
+      - hi im [Amanda Anderson](name)
+      - hi mrs rasa
+      - hi pal!
+      - hi sara
+      - hi there
+      - hi there it's me
+      - hi!
+      - hi.........................................................
+      - hi?
+      - hieee
+      - hii
+      - hiihihi
+      - hiii
+      - hlo
+      - hola
+      - howdy
+      - i am [Karen Mease](name)
+      - jojojo
+      - jop
+      - konichiwa
+      - merhaba
+      - ola sara
+      - rasa hello
+      - salut
+      - sup
+      - wasssup
+      - wasssup!
+      - what up
+      - whats popping
+      - whats up
+      - yo
+      - yoo
+      - ssup?
+      - helleo
+  - intent: faq/alternate_info
+    examples: |
+      - Can I provide a order id instead?
+      - Can anyone look up my status with my e-mail address?
+  - intent: faq/sizing_clarification
+    examples: |
+      - American or european sizing?
+  - intent: faq/payment_methods
+    examples: |
+      - what kind of payment methods do you offer?
+      - how do I pay
+  - intent: faq/promotions
+    examples: |
+      - what kind of deals do you have
+      - are you running anything for apple friday
+  - intent: chitchat/ask_builder
+    examples: |
+      - Who created yu
+      - Who created you?
+      - Who create you?
+      - Who create u?
+      - Can you tell me your father's name
+      - Can u tell me ur father's name?
+      - I want to know your creator
+      - Do you mind telling me who built you?
+      - Wish to know your creator.
+  - intent: chitchat/thanks
+    examples: |
+      - thx
+      - Awesome, thanks!
+      - thanks mate
+      - thank you
+      - Cool. Thanks
+      - Great, thanks
+      - Thank you
+      - Thank you Sara
+      - Thank you so much
+      - Thank's!
+      - Thanks
+      - Thanks bot
+      - Thanks for that
+      - Thanks!
+      - amazing, thanks
+      - cheers
+      - cheers bro
+      - cool thank you
+      - cool thanks
+      - cool, thanks
+      - danke
+      - great thanks
+      - ok thanks
+      - ok thanks sara
+      - ok thanks!
+      - perfect thank you
+      - thank u
+      - thank you
+      - thank you anyways
+      - thanks
+      - thanks a bunch for everything
+      - thanks a lot
+      - thanks for forum link, I'll check it out
+      - thanks for the help
+      - thanks this is great news
+      - thanks you
+      - thanks!
+      - thankyou
+      - thnks
+      - thx
+      - yes thanks
+      - thanks for your information
+      - thanks f
+  - intent: chitchat/confirm_presence
+    examples: |
+      - are you there?
+  - intent: chitchat/capabilities
+    examples: |
+      - What else can you do?
+      - what can you do?
+  - intent: chitchat/mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - cool beans
+  - intent: chitchat/mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+      - this is not working
+      - you suck
+  - intent: chitchat/ask_wherefrom
+    examples: |
+      - Are you from around here?
+      - Around where are you from?
+      - Do you know where you come from?
+      - From where did you come?
+      - So where are you from
+      - What area are you from?
+      - What citizenship do you lay claim to?
+      - What city are you in?
+      - What city do you claim to for your birth?
+      - What city were you born in?
+      - What country are you from?
+      - What country were you born in?
+      - What is your birthplace?
+      - What is your heritage?
+      - What is your origin?
+      - What is your original location?
+      - What is your root?
+      - What location are you from?
+      - What state were you born in?
+      - What's the name of the place you came from?
+      - Where are you located?
+      - Where are you?
+      - Where are your origins?
+      - Where are your roots?
+      - Where did you come from?
+      - Where did you grow up?
+      - Where did you originate?
+      - Where do you come from?
+      - Where do you consider home?
+      - Where do you live?
+      - Where from?
+      - Where might you be from?
+      - Where were you at before you were here?
+      - Where were you born?
+      - You live around here?
+      - You were conceived in what location?
+      - are you from around here?
+      - what country are you from?
+      - where are from
+      - where are you from
+      - where are you from?
+      - where are your parents from?
+      - where did you come from?
+      - where did you grow up?
+      - where did you spend your youth?
+      - where do you come from?
+      - where do you live
+      - where do you live?
+      - where's your home town?
+  - intent: chitchat/bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - Ar you a bot ?
+      - Are you a bot
+      - Are you a chat bot?
+      - Are you the bot?
+      - Hi there, are you the bot?
+      - are you a BOT
+      - are you a Skynet ?
+      - are you a bot
+      - are you a bot ?
+      - are you a bot?
+      - are you a chatbot
+      - are you a rasa bot?
+      - are you a real bot?
+      - are you a robot
+      - are you ai
+      - are you artificial
+      - are you artificial intelligence
+      - are you bot
+      - are you bot?
+      - are you rasa bot?
+      - are you real
+      - are you real lol
+      - are you really a bot
+      - are you robot
+      - are you sure that you're a bot?
+      - bot?
+      - cuz you are a bot
+      - i guess you are a chatbot
+      - oh are you chatbot?
+      - tell me, are you a bot?
+      - what are you, a bot?
+      - you are a robot
+      - you are ai
+      - you are chatbot
+      - you're a bot
+      - you robo
+      - real bot then?
+      - are you really a bbot?
+      - hey are you human
+      - are u human
+      - r u a human
+      - are you real human?
+      - you are a human
+      - Rara, are you a human?
+      - you are bot or human?
+      - are you human
+      - ok, i know i confused you there being a human! :)
+      - you are human or bot
+      - Are you human?
+      - are you a human ?
+      - Are you human ?
+      - Are you a human being?
+      - sara, are you a robot or human?
+      - r u real?
+      - are you a real person
+      - are u a real person?
+      - Are you a real person?
+      - are you a real person?
+      - are you real person or chat bot?
+      - So I'm here Today to ask one very simple question, what are you ?
+      - you sound like a real human
+      - wow you sound like real human
+      - are you human ?
+  - intent: chitchat/goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - Bye
+      - Bye bye
+      - adios
+      - adios?
+      - bye
+      - bye .
+      - bye :P
+      - bye bot
+      - bye bye
+      - bye bye bot
+      - bye for now
+      - bye udo
+      - bye was nice talking to you
+      - bye!
+      - byee
+      - catch you later
+      - ciao
+      - cya
+      - farewell
+      - good bye
+      - good bye rasa bot!
+      - good night
+      - goodbye
+      - goodbye.
+      - goodnight
+      - gotta go
+      - k byyye #slay
+      - ok Bye
+      - ok bye
+      - ok, bye
+      - ok.bye
+      - see u later
+      - see ya
+      - see you
+      - see you . bye
+      - take care
+      - then bye
+      - tlak to you later
+      - toodle-oo
+      - Exit
+      - Close this talk
+      - byr
+  - intent: chitchat/ask_howbuilt
+    examples: |
+      - By what means were you made?
+      - By what method were you fashioned?
+      - Can you explain how you were created?
+      - Can you give me an idea as to how you were created?
+      - Can you say how you were constructed?
+      - Do you know how you were built?
+      - Do you know how you were made?
+      - How did they build you?
+      - How did they create you?
+      - How did they make you?
+      - How did you come into being?
+      - How did you come to be?
+      - How exactly were you devised?
+      - How exactly were you made?
+      - How were you built?
+      - How were you conceived?
+      - How were you constructed?
+      - How were you devised?
+      - How were you formed?
+      - How were you made into who you are?
+      - How were you made?
+      - How were you materialized?
+      - How were you set up?
+      - I want to know how you were formed
+      - I'd like to know how you were created
+      - I'd like to know how you were put together?
+      - In what manner were you built?
+      - In what manner were you constructed?
+      - In what manner were you formed?
+      - In what way were you created?
+      - In what way were you formed?
+      - In what way were you made?
+      - In what way were you shaped?
+      - In which manner were you devised?
+      - Let me know how you were made exactly
+      - Specify how you were created?
+      - Tell me how you were made?
+      - What process was used to build you?
+      - What process was used to create you?
+      - What was the process for making you?
+      - You originated through what means?
+      - how have you been built?
+      - how were you made?
+      - in what way were you made?
+      - so how were you made?
+      - what are you made of
+      - Are you built using rasa?
+      - Are u developed in rasa
+      - are you build with rasa ?
+  - intent: chitchat/ask_howdoing
+    examples: |
+      - Ahoy matey how are you?
+      - Are you ok?
+      - Do you feel good?
+      - Do you have a great day?
+      - HI Sara, what are you up to?
+      - Hi Sara! How are you?
+      - How are You?
+      - How are things?
+      - How are you
+      - How are you men?
+      - How are you today?
+      - How are you?
+      - How was your day?
+      - How you doing?
+      - How's it going
+      - How's it hanging?
+      - How's life treating you friend?
+      - How've you been?
+      - Hows it going
+      - I'm fine and you
+      - Is everything ok?
+      - What's going on?
+      - What's new?
+      - What's up
+      - What's up man
+      - and you
+      - are you alright
+      - are you happy
+      - are you having a good day
+      - are you ok
+      - are you okay
+      - h r u ?
+      - hello, how are you?
+      - hey how are you?
+      - hi how are you?
+      - hi how u doing
+      - hi sara, how are you?
+      - how ?
+      - how are things going
+      - how are things with you?
+      - how are u
+      - how are u?
+      - how are xou
+      - how are you
+      - how are you ?
+      - how are you doing
+      - how are you doing this morning
+      - how are you doing today my sweet friend
+      - how are you doing today?
+      - how are you doing?
+      - how are you feeling
+      - how are you today
+      - how are you'
+      - how are you?
+      - how are you????
+      - how are yuo
+      - how do you do?
+      - how have you been
+      - how is it going
+      - how is your day
+      - how is your day going
+      - how is your evening
+      - how r u
+      - how r u ?
+      - how r u>
+      - how you doing
+      - how you doing?
+      - how's it going?
+      - how's life
+      - how's life been treating you?
+      - how's your day going
+      - howareyou
+      - hw r u?
+      - is everything all right
+      - is everything okay
+      - nah, I'm good - how are you doing?
+      - okay hi how are you?
+      - wassup>
+      - what about your day
+      - what are you up to?
+      - what's good
+      - what's up
+      - what's up sara
+      - what's up?
+      - whatchcha doing
+      - whatchya upto ?
+      - whats goin on
+      - whats new
+      - whatsapp
+      - yow are you
+      - how are you Rasa
+      - Hey Sara, how's it going
+      - are you cool
+  - intent: chitchat/ask_howold
+    examples: |
+      - Do you have friends the same age as you, if so, how old are they?
+      - How long have you been alive?
+      - How long have you been around?
+      - How long have you occupied the earth?
+      - How many candles were on your last birthday cake?
+      - How many years have you been alive?
+      - How many years have you lived?
+      - How old are you?
+      - How old were you on your last birthday?
+      - How old will you be on your next birthday?
+      - Tell me your day, month and year of birth.
+      - What is your age?
+      - What is your birthdate?
+      - What is your count of years being alive so far?
+      - What was your age on your last birthday?
+      - What will be your age on your next birthday?
+      - What year were you born?
+      - Whats your age?
+      - When do you celebrate your day of birth?
+      - and you are how many years old?
+      - can you tell me exactly how old you are?
+      - can you tell me what number represents your age?
+      - can you tell me your age?
+      - do you know how old you are?
+      - give me your age?
+      - how about your age
+      - how aold are you
+      - how many ages?
+      - how many years old are you?
+      - how old are u
+      - how old are you
+      - how old are you?
+      - how old were you on your last birthday?
+      - how old were you when you celebrated your last birthday?
+      - how old will you be this year?
+      - how old?
+      - in what year were you born?
+      - tell me how old you are?
+      - tell me your age number?
+      - tell me your age?
+      - what age are you
+      - what age were you when you celebrated your last birthday?
+      - what is your age?
+      - what is your birthday?
+      - what is your exact age?
+      - what number represents your age?
+      - what year were you born?
+      - what's your age?
+      - whats your age?
+      - whats your birth year?
+      - when is your birthday?
+      - when were you born?
+      - when you were bon
+      - What's your age?
+  - intent: out_of_scope
+    examples: |
+      - mmm I can't see what you're saying
+      - I am looking forward to my best friend's wedding. Do you have any tuxedo's?
+      - hmmmm
+      - Can I?
+      - Well, okay then
+      - what is the square root of 5
+      - I want to know the weather
+      - what is the meaning of life.
+      - Fridge Isn't Running
+      - my tv isn't working
+      - I want a pizza
+      - my washing machine isn't working
+      - what year is it
+      - order a pizza
+      - I want to order a pizza
+      - what is the weather today
+      - what is the weather
+      - why is the sky blue
+      - blah blah blah

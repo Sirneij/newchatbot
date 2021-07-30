@@ -1,0 +1,4 @@
+*__pycache__
+models
+actions/*.db
+*/__pycache__
