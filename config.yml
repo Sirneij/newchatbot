@@ -27,11 +27,11 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.3
     ambiguity_threshold: 0.1
-  # - name: "DucklingHTTPExtractor"
-  # url of the running duckling server
-  # url: "http://localhost:6000"
+  - name: "DucklingHTTPExtractor"
+  url of the running duckling server
+  url: "https://futahubchatbot.herokuapp.com"
   # dimensions to extract
-  # dimensions: ["number", "email"]
+  dimensions: ["number", "email"]
   # allows you to configure the locale, by default the language is
   # used
   # locale: "de_DE"
