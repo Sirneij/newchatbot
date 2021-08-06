@@ -1,3 +1,5 @@
 *__pycache__
 actions/*.db
 */__pycache__
+
+env

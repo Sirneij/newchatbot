@@ -1,11 +1,6 @@
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
 language: en
 
 pipeline:
-  # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
-  # # If you'd like to customize it, uncomment and adjust the pipeline.
-  # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
@@ -27,11 +22,11 @@ pipeline:
   - name: FallbackClassifier
     threshold: 0.3
     ambiguity_threshold: 0.1
-  - name: "DucklingHTTPExtractor"
-  url of the running duckling server
-  url: "https://futahubchatbot.herokuapp.com"
+  #- name: "DucklingHTTPExtractor"
+  # url of the running duckling server
+  #url: "http://localhost:8000" #"https://futahubchatbot.herokuapp.com"
   # dimensions to extract
-  dimensions: ["number", "email"]
+  #dimensions: ["number", "email"]
   # allows you to configure the locale, by default the language is
   # used
   # locale: "de_DE"
@@ -39,12 +34,7 @@ pipeline:
   # needed to calculate dates from relative expressions like "tomorrow"
   # timezone: "Europe/Berlin"
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
 policies:
-  # # No configuration for policies was provided. The following default policies were used to train your model.
-  # # If you'd like to customize them, uncomment and adjust the policies.
-  # # See https://rasa.com/docs/rasa/policies for more information.
   - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5
