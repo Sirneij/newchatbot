@@ -64,7 +64,7 @@ responses:
         - payload: Subscribe to product updates
           title: Subscribe to product updates
       text:
-        Hi there! I'm a demo bot from FUTAHub to help you with some petty operations here. How
+        Hi there! I'm a smart bot from FUTAHub to help you with some petty operations here. How
         can I help you?
   utter_default:
     - text: I don't think I understand. Can you try providing more detail?
