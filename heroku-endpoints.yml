@@ -1,0 +1,2 @@
+action_endpoint:
+  url: "https://futahubchatbotaction.herokuapp.com/webhook"

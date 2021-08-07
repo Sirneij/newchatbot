@@ -23,17 +23,17 @@ class ActionProductSearch(Action):
         if device[0] and device[1]:
             # both name and brand
             response = requests.get(
-                "https://futahub.herokuapp.com/api/products/{}/{}/".format(device[1], device[0])
+                "http://localhost:8001/api/products/{}/{}/".format(device[1], device[0])
             )
         if device[0]:
             # only brand
             response = requests.get(
-                "https://futahub.herokuapp.com/api/products/brands/{}".format(device[0])
+                "http://localhost:8001/api/products/brands/{}".format(device[0])
             )
 
         if device[1]:
             # only name
-            response = requests.get("https://futahub.herokuapp.com/api/products/{}".format(device[1]))
+            response = requests.get("http://localhost:8001/api/products/{}".format(device[1]))
 
         else:
             response = {}
@@ -84,17 +84,17 @@ class OrderStatus(Action):
         )
         if order_email_id[0] and order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order-single/{}/{}/".format(
+                "http://localhost:8001/api/order-single/{}/{}/".format(
                     order_email_id[1], order_email_id[0]
                 )
             )
         if order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order/{}/".format(order_email_id[1])
+                "http://localhost:8001/api/order/{}/".format(order_email_id[1])
             )
         if order_email_id[0]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/orders/emails/{}/".format(order_email_id[0])
+                "http://localhost:8001/api/orders/emails/{}/".format(order_email_id[0])
             )
         else:
             respons_order = {}
@@ -142,17 +142,17 @@ class CancelOrder(Action):
         )
         if order_email_id[0] and order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order-single/{}/{}/".format(
+                "http://localhost:8001/api/order-single/{}/{}/".format(
                     order_email_id[1], order_email_id[0]
                 )
             )
         elif order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order/{}/".format(order_email_id[1])
+                "http://localhost:8001/api/order/{}/".format(order_email_id[1])
             )
         elif order_email_id[0]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/orders/emails/{}/".format(order_email_id[0])
+                "http://localhost:8001/api/orders/emails/{}/".format(order_email_id[0])
             )
         else:
             respons_order = {}
@@ -191,17 +191,17 @@ class ReturnOrder(Action):
         )
         if order_email_id[0] and order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order-single/{}/{}/".format(
+                "http://localhost:8001/api/order-single/{}/{}/".format(
                     order_email_id[1], order_email_id[0]
                 )
             )
         if order_email_id[1]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/order/{}/".format(order_email_id[1])
+                "http://localhost:8001/api/order/{}/".format(order_email_id[1])
             )
         if order_email_id[0]:
             respons_order = requests.get(
-                "https://futahub.herokuapp.com/api/orders/emails/{}/".format(order_email_id[0])
+                "http://localhost:8001/api/orders/emails/{}/".format(order_email_id[0])
             )
         else:
             respons_order = {}

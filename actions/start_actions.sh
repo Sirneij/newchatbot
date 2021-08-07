@@ -1,1 +1,0 @@
-rasa run actions --actions actions --cors "*" $PORT || 5055
