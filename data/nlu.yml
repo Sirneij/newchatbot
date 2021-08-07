@@ -52,24 +52,34 @@ nlu:
       - I [do not](negation) subscribe
   - intent: inform
     examples: |
-      - example@rasa.com
-      - my email is example@yahoo.com
-      - it's example@gmail.com
+      - [example@rasa.com](email)
+      - my email is [example@yahoo.com](email)
+      - it's [example@gmail.com](email)
       - [apple](brand) devices
       - [infinix](brand) ones
-      - I'm looking for [orange](brand) devices
-      - [brown](brand)
-      - [blue](brand)
-      - it's 123
-      - it's a@b.com
-      - xyz@hulaloo.ai
-      - gray
-      - [Maize](brand) and [blue](brand)
-      - wait actually that email is wrong. it should be asdf1@asdf.com
-      - asdf@asdf.com
-      - [Grey](brand)
-      - test@test.com
+      - I'm looking for [apple](brand) devices
+      - [infinix](brand)
+      - [dell](brand)
+      - it's [123](order_id)
+      - it's [a@b.com](email)
+      - [xyz@hulaloo.ai}(email)
+      - apple
+      - [hp](brand) and [apple](brand)
+      - wait actually that email is wrong. it should be [asdf1@asdf.com](email)
+      - [asdf@asdf.com](email)
+      - [azus](brand)
+      - [test@test.com](email)
       - [SDZ3peA6ha](order_id)
+      - my order ID is [ABC3peBB8r](order_id)
+      - my order id is [ABC3peBB8r](order_id)
+      - my orderid is [ABC3peBB8r](order_id)
+      - my orderID is [ABC3peBB8r](order_id)
+      - my order_id is [SDZ3peA6ha](order_id)
+      - [xyz@rasa.com](email) [SDZ3peA6ha](order_id)
+      - [asdf@asdf.com](email) and [SDZ3peA6ha](order_id)
+      - email is [test@test.com](email) and order ID is [SDZ3peA6ha](order_id)
+      - email is [xyz@hulaloo.ai](email) and order id is [SDZ3peA6ha](order_id)
+      - email [test@test.com](email) order ID [SDZ3peA6ha](order_id)
   - intent: order_shoes
     examples: |
       - i want to buy devices
